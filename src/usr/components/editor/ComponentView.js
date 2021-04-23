@@ -620,7 +620,7 @@ class ComponentView extends React.Component {
                   <IFrame
                     ref={this.iFrameRef}
                     width={constants.MEDIA_WIDTHS[iFrameWidthIndex].width}
-                    url={`http://localhost:${serverPort}/webcodesk__component_view`}
+                    url={`http://marathonium.com:${serverPort}/webcodesk__component_view`}
                     onIFrameReady={this.handleIFrameReady}
                     onIFrameMessage={this.handleFrameworkMessage}
                   />

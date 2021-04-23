@@ -935,8 +935,8 @@ class PageComposer extends React.Component {
                         width={constants.MEDIA_WIDTHS[iFrameWidthIndex].width}
                         // scale={constants.MEDIA_SCALE[iFrameScaleIndex].value}
                         url={isPreviewMode
-                          ? `http://localhost:${serverPort}/webcodesk__component_view`
-                          : `http://localhost:${serverPort}/webcodesk__page_composer?iframeId=${this.iframeId}`
+                          ? `http://marathonium.com:${serverPort}/webcodesk__component_view`
+                          : `http://marathonium.com:${serverPort}/webcodesk__page_composer?iframeId=${this.iframeId}`
                         }
                         onIFrameReady={this.handleIFrameReady}
                         onIFrameMessage={this.handleIFrameMessage}
@@ -994,8 +994,8 @@ class PageComposer extends React.Component {
                         width={constants.MEDIA_WIDTHS[iFrameWidthIndex].width}
                         // scale={constants.MEDIA_SCALE[iFrameScaleIndex].value}
                         url={isPreviewMode
-                          ? `http://localhost:${serverPort}/webcodesk__component_view`
-                          : `http://localhost:${serverPort}/webcodesk__page_composer?iframeId=${this.iframeId}`
+                          ? `http://marathonium.com:${serverPort}/webcodesk__component_view`
+                          : `http://marathonium.com:${serverPort}/webcodesk__page_composer?iframeId=${this.iframeId}`
                         }
                         onIFrameReady={this.handleIFrameReady}
                         onIFrameMessage={this.handleIFrameMessage}

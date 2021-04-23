@@ -336,20 +336,20 @@ class LivePreview extends React.Component {
       activeUrl: url,
     });
     if(this.iFrameRef.current) {
-      this.iFrameRef.current.loadURL(`http://localhost:${serverPort}${url}`);
+      this.iFrameRef.current.loadURL(`http://marathonium.com:${serverPort}${url}`);
     }
   };
 
   handleFrameReady = (url) => {
     const { serverPort } = this.props;
     this.setState({
-      frameUrl: url ? url.replace(`http://localhost:${serverPort}`, '') : '',
+      frameUrl: url ? url.replace(`http://marathonium.com:${serverPort}`, '') : '',
     });
   };
 
   handleOpenExternal = () => {
     const { serverPort } = this.props;
-    this.props.onOpenUrl(`http://localhost:${serverPort}${this.state.frameUrl}`);
+    this.props.onOpenUrl(`http://marathonium.com:${serverPort}${this.state.frameUrl}`);
   };
 
   handleDebugSelected = ({searchName, className}) => {
@@ -571,7 +571,7 @@ class LivePreview extends React.Component {
                       ref={this.iFrameRef}
                       width={constants.MEDIA_WIDTHS[iFrameWidthIndex].width}
                       // scale={constants.MEDIA_SCALE[iFrameScaleIndex].value}
-                      url={`http://localhost:${serverPort}${activeUrl}`}
+                      url={`http://marathonium.com:${serverPort}${activeUrl}`}
                       onIFrameMessage={this.handleFrameworkMessage}
                       onIFrameReady={this.handleFrameReady}
                     />
